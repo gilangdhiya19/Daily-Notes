@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Daily Notes 10120071</string>
+
+    //Headings
+    <string name="heading_one">Create By</string>
+    <string name="heading_two">About This Apps</string>
+    <string name="heading_three">Menu in This Apps</string>
+    <string name="heading_fourth">This Apps For</string>
+
+    //Description
+    <string name="desc_one">10120071 - Gilang Dhiya Ulhaq - IF2</string>
+    <string name="desc_two">Aplikasi ini selesai dibuat pada tanggal 30 Mei 2023 oleh 10120071 - Gilang Dhiya Ulhaq kelas IF2. Aplikasi ini berisi tentang mengolah catatan harian.</string>
+    <string name="desc_three">Profile, Catatan Harian, About</string>
+    <string name="desc_fourth">Tugas UTS Genap 2023 AKB DailyNotes - 10120071</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".main.profile.ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="168dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gilang" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="NIM" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignStart="@+id/TextView01"
+                android:layout_alignBottom="@+id/textView2"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Nama" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignStart="@+id/TextView02"
+                android:layout_alignBottom="@+id/textView3"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Kelas" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignStart="@+id/TextView04"
+                android:layout_alignBottom="@+id/textView4"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Email" />
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/poppins"
+                android:text="10120071" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignEnd="@+id/textView1"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Gilang Dhiya Ulhaq" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="IF-2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="gilang.dhiya19@gmail.com" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_200"
+        app:itemIconTint="@color/teal_200"
+        app:itemRippleColor="@color/teal_200"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/navigation_item"></com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
